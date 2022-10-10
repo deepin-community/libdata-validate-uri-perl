@@ -1,0 +1,18 @@
+Source: libdata-validate-uri-perl
+Section: perl
+Priority: optional
+Build-Depends: debhelper (>= 9)
+Build-Depends-Indep: perl (>= 5.6.10-12), libdata-validate-domain-perl, libdata-validate-ip-perl
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Uploaders: Dominic Hargreaves <dom@earth.li>
+Standards-Version: 4.1.0
+Homepage: https://metacpan.org/release/Data-Validate-URI
+Vcs-Git: git://anonscm.debian.org/users/dom/libdata-validate-uri-perl.git
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=users/dom/libdata-validate-uri-perl.git
+
+Package: libdata-validate-uri-perl
+Architecture: all
+Depends: ${perl:Depends}, ${misc:Depends}, libdata-validate-domain-perl, libdata-validate-ip-perl
+Description: common URI validation methods
+ This module collects common URI validation routines to make input
+ validation and untainting easier and more readable.
